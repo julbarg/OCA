@@ -33,6 +33,10 @@ public class PrimitiveType {
 		
 		int million1 = 1000000;
 		int million2 = 1_000_000;
+		//double _100.00 //DOES NOT COMPILE
+		//double notAtEnd = 1000.00_ //DOES NOT COMPILE
+		//double notByDecimal = 100_.00; //DOES NOT COMPILE
+		double annoyingingButLegal = 1_00_0.0_0;
 		
 
 	}
