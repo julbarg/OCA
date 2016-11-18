@@ -7,5 +7,12 @@ public class Chiken {
 	public Chiken(){
 		name = "Duke"; //initialize in constructor
 	}
+	
+	public static void main(String[] args) {
+		DestroyedObjects des = new DestroyedObjects();
+		des = null;
+		
+		System.out.println("End");
+	}
 
 }
