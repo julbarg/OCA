@@ -64,11 +64,45 @@ public class Array {
 		
 		System.out.println();
 		
+		/*
+		 * String sorts in alphabetic order.
+		 */
 		String[] strings = {"6", "9", "11", "2", "100"};
 		Arrays.sort(strings);
 		for(String string: strings){
 			System.out.print(string + "-");
 		}
+	}
+	
+	public void searchBinarySearch() {
+		/*
+		 * BynariSearch: Way to search but only if the array is already sorted
+		 * Target element found in sorted array
+		 * 	Index of match
+		 * Target element not found in sorted array 
+		 * 	Negative value showing one smaller than the negative of index,
+		 * 	where a match needs to be inserted to preserve sorted order
+		 * Unsorted array
+		 * 	A supresi - this result isn't predictable
+		 */
+		int[] numbers = {2, 4, 6, 8};
+		System.out.println(Arrays.binarySearch(numbers, 2)); // 0
+		System.out.println(Arrays.binarySearch(numbers, 4)); // 1
+		/*
+		 * The search can determine that it should be inserted at element 0 to preserve the sorted order.
+		 * Since 0 already means something for array indexes,
+		 * Java needs to substract 1 to give us the answer of -1
+		 */
+		System.out.println(Arrays.binarySearch(numbers, 1)); // -1 []
+		System.out.println(Arrays.binarySearch(numbers, 3)); // -2
+		System.out.println(Arrays.binarySearch(numbers, 9)); // -5
+		
+		System.out.println();
+		
+		int[] numbers2 = new int[] {3, 2, 1};
+		System.out.println(Arrays.binarySearch(numbers2, 2));
+		System.out.println(Arrays.binarySearch(numbers2, 3));
+		
 	}
 
 	public static void main(String[] args) {
@@ -77,6 +111,7 @@ public class Array {
 		a.arrayReferenceVariables();
 		a.usiingArray();
 		a.sorting();
+		a.searchBinarySearch();
 
 	}
 
