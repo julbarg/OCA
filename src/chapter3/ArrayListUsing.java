@@ -262,6 +262,10 @@ public class ArrayListUsing {
 		al.sorting();
 		
 		
+		int n = 0;
+		
+		
+		
 	}
 
 }
