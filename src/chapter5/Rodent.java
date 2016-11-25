@@ -1,5 +1,5 @@
 package chapter5;
 
-class Rodent {
+class Rodent extends Object{
 
 }
