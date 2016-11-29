@@ -1,3 +1,4 @@
+
 package exam;
 
 public class Polimorfismo {
@@ -44,6 +45,9 @@ public class Polimorfismo {
 		
 		Lizard lizard = new Lizard();
 		lizard.getSomething();
+		
+		String[] j = new String[20];
+		j.length
 	}
 }
 
