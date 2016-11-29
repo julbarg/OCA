@@ -57,7 +57,7 @@ public class ReferenceTypesOverloading {
 		r.fly(4.58);
 		r.fly(78L);
 		r.fly(56);
-		r.fly((short) 2);
+		//r.fly((short) 2);
 		
 		System.out.print(glide("a")); // 1
 		System.out.print(glide("a", "b")); // 4
