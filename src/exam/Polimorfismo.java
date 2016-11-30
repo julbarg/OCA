@@ -4,6 +4,11 @@ package exam;
 public class Polimorfismo {
 	public static void main(String[] args) {
 		
+		int i = 0564;
+		int i2 = 0x1234;
+		int i3 = 0b01;
+		int h = 0x12____0;
+		
 		/*
 		 * Padre padre = new Hijo();
 		 * Tipo de objecto = Referencia;
