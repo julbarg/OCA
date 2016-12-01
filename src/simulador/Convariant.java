@@ -32,6 +32,22 @@ public class Convariant {
 		for(int i=0, j=0; j<i; ++j, i++){
 			System.out.println("i: "+i+" j: "+j);
 		}
+		
+		Integer.valueOf(85);
+		boolean h = Boolean.parseBoolean("TrUe");
+		System.out.println("h: "+h);
+		
+		Long long1 = Long.valueOf(127);
+		Long long2 = Long.valueOf(127);
+		System.out.println(long1 == long2);
+		
+		int i = 0;
+		float p = 0f;
+		System.out.println(1);
+		double iii = 0;
+		long fd = 1234567890;
+		double a5 = 10;
+		byte ssi = -0;
 
 	}
 }
