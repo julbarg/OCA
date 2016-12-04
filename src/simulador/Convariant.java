@@ -85,6 +85,18 @@ class ClassA {
 class ClassB {
 	public static void main(String[] args) {
 		ClassA a = new ClassA();
+		ClassB b = new ClassB();
 		System.out.println(a.name);
+		float dou = b.getDouble();
+	}
+	
+	int getDouble(){
+		return 5;
+	}
+	
+	void kk(){
+		String baby;
+		String baby2 = new String("d");
+		return;
 	}
 }
