@@ -1,6 +1,7 @@
 
 package exam;
 
+import java.time.LocalDate;
 import java.time.Period;
 import java.util.ArrayList;
 import java.util.ListIterator;
@@ -12,6 +13,11 @@ public class Polimorfismo {
 		int o = 85;
 	}
 	public static void main(String[] args) {
+		
+		Interviewer interviewer = new Manager();
+		Interviewer.bookRoom(null);
+		interviewer.getY();
+		
 		
 		int i = 0564;
 		int i2 = 0x1234;
@@ -165,6 +171,8 @@ public class Polimorfismo {
 	}
 }
 
+
+
 class Equals {
 	public boolean equals(Equals obj) {
 		return true;
@@ -217,4 +225,22 @@ class Lizard extends Reptile {
 	public static void getSomething() {
 		System.out.println("Lizard");
 	}
+}
+
+interface Interviewer {
+	static void bookRoom(LocalDate date){
+		System.out.println();
+	}
+	
+	void getY();
+}
+
+class Manager implements Interviewer{
+
+	@Override
+	public void getY() {
+		// TODO Auto-generated method stub
+		
+	}
+	
 }
