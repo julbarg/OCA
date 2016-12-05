@@ -14,8 +14,8 @@ public class Polimorfismo {
 	}
 	public static void main(String[] args) {
 		
-		Interviewer interviewer = new Manager();
-		Interviewer.bookRoom(null);
+		Interviewer2 interviewer = new Manager2();
+		Interviewer2.bookRoom(null);
 		interviewer.getY();
 		
 		
@@ -227,7 +227,7 @@ class Lizard extends Reptile {
 	}
 }
 
-interface Interviewer {
+interface Interviewer2 {
 	static void bookRoom(LocalDate date){
 		System.out.println();
 	}
@@ -235,7 +235,7 @@ interface Interviewer {
 	void getY();
 }
 
-class Manager implements Interviewer{
+class Manager2 implements Interviewer2{
 
 	@Override
 	public void getY() {

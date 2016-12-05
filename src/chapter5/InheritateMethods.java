@@ -18,6 +18,12 @@ public class InheritateMethods {
 		} catch (Exception e) {
 		}
 		
+		Father son = new Father();
+		son.methodOne();
+		// son.methodTwo();
+		
+		
+		
 	}
 
 }
@@ -77,4 +83,22 @@ class Snake extends Reptile {
 	protected double getWeight() throws InsufficientDataException{
 		return 2;
 	}
+}
+
+class Father {
+	public void methodOne() {
+		System.out.println("Father");
+	}
+}
+
+class Son extends Father {
+	public void methodTwo() {
+		
+	}
+	
+	@Override
+	public void methodOne() {
+		System.out.println("Son");
+	}
+	
 }
