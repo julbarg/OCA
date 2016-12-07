@@ -74,7 +74,6 @@ public class Excepcionss {
 class FatherE{
 	
 	void methodOne() {
-		throw new Throwable();
 	}
 	
 }
